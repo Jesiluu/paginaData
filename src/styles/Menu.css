@@ -1,0 +1,83 @@
+   /* Estilos */
+   * {
+       box-sizing: border-box;
+   }
+
+   .main {
+    margin-left: 250px;
+    /* Same as the width of the sidenav */
+    padding: 10px 10px;
+    }
+
+   
+
+   
+/*No vienen el JS pero si los utiliza*/
+   /*ESTILOS DE LA BARRA DEL MAIN */
+   /*Barra del menú*/
+   .sidebar {
+       height: 100%;
+       position: fixed;
+       z-index: 1;
+       top: 0;
+       left: 0;
+       background-color: #111;
+       overflow-x: hidden;
+       padding-top: 18px;
+   }
+
+
+   /* Botones de la barra de lado */
+   .tab button {
+       display: block;
+       color: white;
+       background-color: #111;
+       padding: 20px 30px;
+       width: 100%;
+       border: none;
+       outline: none;
+       text-align: left;
+       cursor: pointer;
+       transition: 0.3s;
+       font-size: 15px;
+       font-weight: bold;
+   }
+   .stats {
+       margin-right: 10%;
+   }
+   .file-export {
+       margin-right: 10%;
+   }
+   .recalculate {
+       margin-right: 10%;
+   }
+   .edit-yaml {
+       margin-right: 5%;
+   }
+   .settings {
+       margin-right: 10%;
+   }
+
+   /* Color del boton cuando quiere ser seleccionado*/
+   .tab button:hover {
+       background-color: #F58227;
+   }
+
+   /* Color del boton seleccionado*/
+   .tab button.active {
+       background-color: red;
+   }
+
+   /*Subtitulo de la barra del main*/
+   h5 {
+       color: white;
+       margin-left: 20px;
+       padding-top: 5%;
+       padding-bottom: 17%;
+   }
+
+   @media screen and (max-height: 70px) {
+       .sidebar {
+           padding-top: 20px;
+       }
+   }
